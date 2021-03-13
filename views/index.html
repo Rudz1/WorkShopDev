@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Creative Home</title>
+</head>
+<body>
+    <div id="container">
+        <section id="intro">
+            <header>
+                <a href="/">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+             </header>
+
+            <main>
+                <p>Staying at home for long periods shouldn't be easy.</p>
+                <p>We will catalog ideas, <strong>games, movies, books, courses,</strong> tips and everything necessary to make this moment more interesting.</p>
+                <p>Start by clicking on see ideas to see the ideas registered and contribute by adding your idea</p>
+            </main>
+         <section id="buttons">
+            <button onclick="onOff()">+ Adition ideas</button>
+            <a href="/ideas" class="button">See ideas</a>
+         </section>    
+           <footer>
+             <a href="https://github.com/Rudz1" target="_blank">With 🎱 Rudz</a>
+           </footer>
+            
+        </section>
+    
+    
+        <section id="last-ideas">
+           {% include "all_ideas.html" %}
+        </section>
+    </div>
+    
+    {% include "modal.html" %}
+
+    <script src="./main.js"></script>
+</body>
+</html>
+

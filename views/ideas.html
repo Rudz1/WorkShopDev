@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <title>Ideas</title>
+</head>
+<body id="page-ideas">
+    
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <li><a href="/">Start</a></li>
+                <li><a href="#" onclick="onOff()">New idea</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>On display</p>
+            <h1>Ideas</h1>
+        </section>
+        <main>
+            <section id="ideas">
+               {% include "all_ideas.html" %}
+            </section>
+        </main>
+        
+        <footer>
+            <a href="https://github.com/Rudz1" target="_blank">With 🎱 Rudz</a>
+        </footer>
+    
+    </div>
+
+    {% include "modal.html" %}
+    
+    <script src="./main.js"></script>
+</body>
+</html>
